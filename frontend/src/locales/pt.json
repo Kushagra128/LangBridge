@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Aplicativo de Chat Talky",
+    "welcome": "Bem-vindo ao Talky!",
+    "logout": "Sair",
+    "settings": "Configurações",
+    "profile": "Perfil",
+    "send": "Enviar",
+    "type_message": "Digite uma mensagem...",
+    "no_messages": "Ainda não há mensagens. Comece a conversa!"
+  }
+}

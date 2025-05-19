@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Talky Chat App",
+    "welcome": "Welcome to Talky!",
+    "logout": "Logout",
+    "settings": "Settings",
+    "profile": "Profile",
+    "send": "Send",
+    "type_message": "Type a message...",
+    "no_messages": "No messages yet. Start the conversation!"
+  }
+}

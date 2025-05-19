@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Application de Chat Talky",
+    "welcome": "Bienvenue sur Talky!",
+    "logout": "Déconnexion",
+    "settings": "Paramètres",
+    "profile": "Profil",
+    "send": "Envoyer",
+    "type_message": "Tapez un message...",
+    "no_messages": "Pas encore de messages. Commencez la conversation!"
+  }
+}

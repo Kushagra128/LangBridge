@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+	themes: light, dark, cupcake, bumblebee, emerald, corporate, synthwave, retro,
+		cyberpunk, valentine, halloween, garden, forest, aqua, lofi, pastel, fantasy,
+		wireframe, black, luxury, dracula, cmyk, autumn, business, acid, lemonade,
+		night, coffee, winter, dim, nord, sunset;
+}
+
+/* Custom Quill styles for theme blending */
+.ql-container {
+	background: var(--tw-bg-base-100) !important;
+	color: var(--tw-text-base-content) !important;
+	border-radius: 0.5rem;
+	font-size: 1.1rem;
+	border: 1px solid var(--tw-border-base-200) !important;
+}
+
+.ql-toolbar {
+	background: var(--tw-bg-base-200) !important;
+	border-radius: 0.5rem 0.5rem 0 0;
+	color: var(--tw-text-base-content) !important;
+	border: 1px solid var(--tw-border-base-200) !important;
+	margin-bottom: 0 !important;
+}
+
+.ql-editor {
+	min-height: 120px;
+	color: var(--tw-text-base-content) !important;
+	font-family: "Segoe UI", Arial, sans-serif;
+	background: var(--tw-bg-base-100) !important;
+}
+
+/* Placeholder text color set to grey */
+div[data-theme="light"] .ql-editor::before {
+	color: #808080 !important;
+}
+
+div[data-theme="dark"] .ql-editor::before {
+	color: #808080 !important;
+}
+
+/* Quill toolbar icon colors with high specificity */
+div[data-theme="light"] .ql-toolbar .ql-stroke,
+div[data-theme="light"] .ql-toolbar .ql-fill,
+div[data-theme="light"] .ql-toolbar .ql-picker,
+div[data-theme="light"] .ql-toolbar .ql-picker-item,
+div[data-theme="light"] .ql-toolbar .ql-picker-label {
+	stroke: #000 !important;
+	fill: #000 !important;
+	color: #000 !important;
+}
+
+div[data-theme="dark"] .ql-toolbar .ql-stroke,
+div[data-theme="dark"] .ql-toolbar .ql-fill,
+div[data-theme="dark"] .ql-toolbar .ql-picker,
+div[data-theme="dark"] .ql-toolbar .ql-picker-item,
+div[data-theme="dark"] .ql-toolbar .ql-picker-label {
+	stroke: #ccc !important;
+	fill: #ccc !important;
+	color: #ccc !important;
+}
+
+/* Focus and hover states */
+.ql-container.ql-snow:focus-within {
+	box-shadow: 0 0 0 2px var(--tw-ring-color, #a855f7);
+}
+
+/* Quill scrollable editor */
+.quill-scroll .ql-editor {
+	max-height: 350px;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--tw-border-base-300) var(--tw-bg-base-200);
+	background: var(--tw-bg-base-200) !important;
+	color: var(--tw-text-base-content) !important;
+}
+
+.quill-scroll .ql-editor::-webkit-scrollbar {
+	width: 8px;
+}
+
+.quill-scroll .ql-editor::-webkit-scrollbar-thumb {
+	background: var(--tw-border-base-300);
+	border-radius: 4px;
+}
+
+.quill-scroll .ql-editor::-webkit-scrollbar-track {
+	background: var(--tw-bg-base-200);
+}
+
+/* Quill dropdowns (pickers) theme fix */
+.ql-toolbar .ql-picker {
+	color: var(--tw-text-base-content) !important;
+}
+
+.ql-toolbar .ql-picker-options {
+	background: var(--tw-bg-base-100) !important;
+	color: var(--tw-text-base-content) !important;
+	border: 1px solid var(--tw-border-base-200) !important;
+}
+
+.ql-toolbar .ql-picker-item {
+	color: var(--tw-text-base-content) !important;
+}
+
+.animated-gradient {
+	background-size: 200% 200%;
+	transition: background-position 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animated-gradient:hover {
+	background-position: right bottom;
+}
