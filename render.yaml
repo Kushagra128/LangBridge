@@ -2,6 +2,6 @@ services:
   - type: web
     name: langbridge-backend
     env: node
-    buildCommand: cd backend && npm install && pip install -r requirements.txt
-    startCommand: cd backend && npm run dev
-    rootDir: .
+    buildCommand: npm install && pip install -r requirements.txt
+    startCommand: npm run dev
+    rootDir: backend
