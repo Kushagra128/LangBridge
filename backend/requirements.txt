@@ -1,0 +1,6 @@
+speechrecognition
+pydub
+googletrans
+gtts
+# Optional: for Indian language transliteration
+indic-transliteration 
