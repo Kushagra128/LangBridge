@@ -2,6 +2,19 @@ services:
   - type: web
     name: langbridge-backend
     env: node
-    buildCommand: npm install && pip install -r requirements.txt
-    startCommand: npm run dev
     rootDir: backend
+    buildCommand: npm install && pip install -r requirements.txt
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  - type: web
+    name: langbridge-frontend
+    env: node
+    rootDir: frontend
+    buildCommand: npm install
+    startCommand: npm run dev
+    envVars:
+      - key: NODE_ENV
+        value: production
