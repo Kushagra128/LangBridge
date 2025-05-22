@@ -1,6 +1,6 @@
-speechrecognition
-pydub
-googletrans
-gtts
+speechrecognition==3.10.0
+pydub==0.25.1
+googletrans==4.0.0-rc1
+gtts==2.3.2
 # Optional: for Indian language transliteration
-indic-transliteration 
+indic-transliteration==0.8.0 
